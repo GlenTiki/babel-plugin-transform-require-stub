@@ -16,7 +16,7 @@ Well this lets you do just that, by stubbing out required files with specified e
 
 Add the plugin to your .babelrc or package.json with a config like so:
 
-```json
+```js
 {
   "plugins": [
     [
