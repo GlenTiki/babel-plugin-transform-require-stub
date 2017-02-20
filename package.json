@@ -1,11 +1,11 @@
 {
   "name": "babel-plugin-transform-require-stub",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "stub the required file by extension type",
   "main": "lib/index.js",
   "scripts": {
     "build": "babel src/ --out-dir lib/",
-    "pre-publish": "babel src --out-dir lib"
+    "prepublish": "babel src --out-dir lib"
   },
   "license": "MIT",
   "keywords": [
