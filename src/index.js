@@ -62,9 +62,9 @@ export default function (obj) {
             const ext = path.extname(arg.node.value)
             if (arg && arg.isStringLiteral() && extensions.indexOf(ext) > -1) {
               if (opts[ext]) {
-                return nodePath.replaceWith(t.expressionStatement(optionsToExpressionStub(opts[ext])))
+                return nodePath.replaceWith(t.expressionStatement(optionsToExpressionStub(opts[ext], arg.node.value)))
               } else if (opts.defaultStub) {
-                return nodePath.replaceWith(t.expressionStatement(optionsToExpressionStub(opts.defaultStub)))
+                return nodePath.replaceWith(t.expressionStatement(optionsToExpressionStub(opts.defaultStub, arg.node.value)))
               } else {
                 return nodePath.replaceWith(t.expressionStatement(t.stringLiteral(arg.node.value)))
               }
