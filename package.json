@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-transform-require-stub",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "stub the required file by extension type",
   "main": "lib/index.js",
   "scripts": {
